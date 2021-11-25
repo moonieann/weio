@@ -8,7 +8,7 @@ from builtins import str
 from future import standard_library
 standard_library.install_aliases()
 try:
-    from .file import File, WrongFormatError, BrokenFormatError
+    from file import File, WrongFormatError, BrokenFormatError, EmptyFileError
 except:
     # --- Allowing this file to be standalone..
     class WrongFormatError(Exception):
